@@ -268,7 +268,7 @@ img {
 .modal-btn:focus .modal-icon {
   fill: var(--background-color-one);
 }
-.modal-form {
+.modal-form-block {
   padding: 72px 24px 24px 24px;
 }
 .modal-title {
@@ -279,6 +279,26 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--nav-item-color);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-form-item {
+  position: relative;
+}
+.modal-input {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+.icon-send {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 /**
   |============================
