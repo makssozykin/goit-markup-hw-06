@@ -634,6 +634,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--background-color-one);
   border: 1px solid var(--background-color-one);
+  outline: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--nav-item-color);
@@ -655,9 +656,14 @@ img {
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-btn-sub {
   fill: currentColor;
+}
+.footer-btn-sub:hover,
+.footer-btn-sub:focus {
+  background-color: var(--link-color-hover);
 }
 .logo-link {
   display: inline-block;
